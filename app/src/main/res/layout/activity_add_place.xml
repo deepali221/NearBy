@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="#98a3d2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/place_image"
+                android:layout_width="match_parent"
+                android:maxHeight="150dp"
+                android:scaleType="centerCrop"
+                android:layout_height="150dp"
+                android:background="@color/primaryColor">
+
+            </ImageView>
+
+            <ImageButton
+                android:id="@+id/add_places_thumbnail"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@id/place_image"
+                android:layout_gravity="end|bottom"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/camera" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingEnd="18dp"
+            android:paddingStart="18dp"
+            android:paddingTop="15dp">
+
+            <EditText
+                android:id="@+id/add_places_placename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/linear_shape_rounded_corner"
+                android:inputType="textCapSentences|textMultiLine"
+                android:hint="Place Name"
+                android:textColor="#737373" />
+
+            <EditText
+                android:id="@+id/add_place_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/linear_shape_rounded_corner"
+                android:hint="Area"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="#737373" />
+
+            <EditText
+                android:id="@+id/add_place_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/linear_shape_rounded_corner"
+                android:hint="Address"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="#737373" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/add_places_phone_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/linear_shape_rounded_corner"
+                    android:gravity="start"
+                    android:hint="Phone no."
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:textColor="#737373" />
+
+                <EditText
+                    android:id="@+id/add_places_website"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/linear_shape_rounded_corner"
+                    android:gravity="end"
+                    android:hint="Website"
+                    android:textColor="#737373" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/add_places_tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:paddingBottom="15dp" />
+
+            <Button
+                android:id="@+id/btntags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/primaryColor"
+                android:layout_marginBottom="15dp"
+                android:text="Add Tags" />
+
+
+                <EditText
+                    android:id="@+id/latitude_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/linear_shape_rounded_corner"
+                    android:hint="Latitude"
+                    android:inputType="numberDecimal"
+                    android:textColor="#737373" />
+
+                <EditText
+                    android:id="@+id/longitude_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/linear_shape_rounded_corner"
+                    android:hint="Longitude"
+                    android:inputType="numberDecimal"
+                    android:textColor="#737373" />
+
+                <Button
+                    android:id="@+id/btnGetLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primaryColor"
+                    android:padding="10dp"
+                    android:text="Get Current Location" />
+
+                <Button
+                    android:id="@+id/get_map_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primaryColor"
+                    android:padding="10dp"
+                    android:text="Get map" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/primaryColor"
+            android:text="Add Place" />
+    </LinearLayout>
+</ScrollView>

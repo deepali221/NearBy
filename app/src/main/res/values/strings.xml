@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">NearBy</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="map_box_style">mapbox://styles/shubhankar65/cin4gejvn00mrcznosx88d2df</string>
+    <string name="map_box_access_key">pk.eyJ1Ijoic2h1YmhhbmthcjY1IiwiYSI6ImNpbjRhNmRlbzBjNTB3Ymx1bTI0bWN1b2kifQ.7230y8CLgNaumb1FkozI8g</string>
+
+
+    <string-array name="tabs">
+        <item>Home</item>
+        <item>Nearby</item>
+    </string-array>
+    <string-array name="category">
+        <item>Atm</item>
+        <item>Bakery</item>
+        <item>Pharmacy</item>
+        <item>Cafe</item>
+        <item>Hospital</item>
+        <item>Laundry</item>
+        <item>Taxi Stands</item>
+        <item>Movie Theater</item>
+        <item>Gym</item>
+        <item>Restaurant</item>
+    </string-array>
+    <string-array name="tagCategory">
+        <item>atm</item>
+        <item>bakery</item>
+        <item>pharmacy</item>
+        <item>cafe</item>
+        <item>hospital</item>
+        <item>laundry</item>
+        <item>taxi_Stands</item>
+        <item>movie_theater</item>
+        <item>gym</item>
+        <item>restaurant</item>
+    </string-array>
+
+    <string name="facebook_app_id">629507357192350</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="error_timeout">Connect Could Not Be Established</string>
+    <string name="error_auth_fail">Authentication Failure</string>
+    <string name="error_server">Sever Could Not Be Found</string>
+    <string name="error_network">Network Could Not Be Found</string>
+    <string name="error_parse">Could Not Parse The Data</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_place_acitivity">PlaceAcitivity</string>
+    <string name="title_activity_place">PlaceActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_map_box">MapBoxActivity</string>
+</resources>

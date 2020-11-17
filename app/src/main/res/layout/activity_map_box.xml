@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:style_url="@string/map_box_style"
+        mapbox:center_latitude="18.51957"
+        mapbox:center_longitude="73.85535"
+        mapbox:zoom="12"
+        mapbox:access_token="@string/map_box_access_key"/>
+
+    <ImageButton
+        android:id="@+id/get_location_btn"
+        android:layout_gravity="bottom|end"
+        android:scaleType="fitXY"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:src="@drawable/get_location_icon"/>
+
+    <ProgressBar
+        android:id="@+id/loading_prog"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_height="wrap_content" />
+
+
+
+</FrameLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_view_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primaryColor"
+    android:orientation="vertical"
+    android:transitionName="start_search">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+    <SearchView
+        android:layout_margin="5dp"
+        android:id="@+id/searchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primaryColorDark"
+        android:background="@drawable/linear_shape_rounded_corner"
+        android:layout_weight="9"/>
+
+    <ImageButton
+        android:id="@+id/filter_btn"
+        android:layout_marginRight="5dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/filter"
+        android:background="@drawable/linear_shape_rounded_corner"
+        android:backgroundTint="@color/accentColor"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:background="@color/com_facebook_likeboxcountview_text_color"
+        android:id="@+id/search_suggestion_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="100dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

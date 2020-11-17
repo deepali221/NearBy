@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar"></include>
+
+    <EditText
+        android:id="@+id/comment"
+        android:hint="Write a comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#101010"
+        android:minHeight="150dp"
+        android:gravity="start"
+        android:background="@android:color/transparent"/>
+    <Button
+        android:padding="10dp"
+        android:id="@+id/add_comment"
+        android:text="Add Comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/primaryColor"/>
+
+    <ProgressBar
+        android:id="@+id/loading_prog"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nearby.shubh.nearby">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <permission
+        android:name="com.company.app.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name=".Activities.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".Activities.AddPlaceActivity"
+            android:label="AddPlace"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Activities.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:label="Home" />
+        <activity
+            android:name=".Activities.SplashScreenActivity"
+            android:label="Near by"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.PlaceActivity"
+            android:label="@string/title_activity_place"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Activities.CommentsActivity" />
+        <activity android:name=".Activities.MapBoxActivity"/>
+        <service android:name=".Services.LocationService"/>
+        <service android:name="com.mapbox.mapboxsdk.telemetry.TelemetryService" />
+    </application>
+
+</manifest>
